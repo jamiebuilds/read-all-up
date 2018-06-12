@@ -1,0 +1,49 @@
+{
+  "name": "read-all-up",
+  "version": "0.0.0",
+  "description": "Read all matching files or directories by walking up parent directories",
+  "main": "index.js",
+  "repository": "jamiebuilds/read-all-up",
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "keywords": [
+    "read",
+    "all",
+    "find",
+    "up",
+    "findup",
+    "readup",
+    "find-up",
+    "read-up",
+    "look-up",
+    "look",
+    "file",
+    "search",
+    "match",
+    "package",
+    "resolve",
+    "parent",
+    "parents",
+    "folder",
+    "directory",
+    "dir",
+    "walk",
+    "walking",
+    "path",
+    "recursive"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "flow && ava"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "flow-bin": "^0.74.0"
+  },
+  "dependencies": {
+    "parent-dirs": "^1.0.0",
+    "util.promisify": "^1.0.0"
+  }
+}
