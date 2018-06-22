@@ -1,6 +1,6 @@
 {
   "name": "read-all-up",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read all matching files or directories by walking up parent directories",
   "main": "index.js",
   "repository": "jamiebuilds/read-all-up",
