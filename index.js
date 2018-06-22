@@ -11,6 +11,11 @@ type Opts = {
   cwd?: string,
   encoding?: string,
 };
+
+type File = {
+  filePath: string,
+  fileContents: string | Buffer,
+};
 */
 
 function getFilePaths(filename, opts) {
@@ -30,7 +35,7 @@ function getFilePaths(filename, opts) {
   return filePaths;
 }
 
-function readAllUp(filename /*: string */, opts /*: Opts | void */) {
+function readAllUp(filename /*: string */, opts /*: Opts | void */) /*: Promise<Array<File>> */ {
   opts = opts || {};
 
   let encoding = opts.encoding || null;
@@ -47,7 +52,7 @@ function readAllUp(filename /*: string */, opts /*: Opts | void */) {
   })).then(results => results.filter(Boolean));
 }
 
-function readAllUpSync(filename /*: string */, opts /*: Opts | void */) {
+function readAllUpSync(filename /*: string */, opts /*: Opts | void */) /*: Array<File> */ {
   opts = opts || {};
 
   let encoding = opts.encoding || null;
